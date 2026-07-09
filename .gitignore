@@ -1,0 +1,23 @@
+__pycache__/
+*.pyc
+*.egg-info/
+dist/
+build/
+Output/
+.venv/
+venv/
+
+# Build artifact of installer/build_skill_zip.py -- regenerated at build
+# time, not source.
+installer/qbbridge-bookkeeping.zip
+
+# Undo logs / run artifacts should never be committed -- they may contain
+# real transaction data from whatever company file was used during testing.
+qbbridge_runs/
+*.undolog.jsonl
+
+# Never commit real client config/rules if this repo is ever used as a
+# template with a workspace folder alongside it.
+.bookkeeping/
+config.json
+rules.json
